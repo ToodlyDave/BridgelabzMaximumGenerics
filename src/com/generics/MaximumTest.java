@@ -10,15 +10,15 @@ public class MaximumTest {
 		Maximum obj = new Maximum();
 		
 		System.out.print(" Please enter the first value: ");
-		int first = scan.nextInt();
+		float first = scan.nextFloat();
 		
 		System.out.print(" Please enter the second value: ");
-		int second = scan.nextInt();
+		float second = scan.nextFloat();
 		
 		System.out.print(" Please enter the third value: ");
-		int third = scan.nextInt();
+		float third = scan.nextFloat();
 		
-		obj.findMax(first, second, third);
+		obj.findMaxFloat(first, second, third);
 		
 		scan.close();
 	}
