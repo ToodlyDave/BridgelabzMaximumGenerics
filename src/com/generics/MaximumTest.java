@@ -7,8 +7,7 @@ public class MaximumTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scan = new Scanner(System.in);
-		Maximum obj = new Maximum();
-		
+		Maximum obj;
 		
 		while(true) {
 			System.out.println(" 1. Integers\n 2. Float\n 3. String\n 4. Exit");
@@ -26,7 +25,8 @@ public class MaximumTest {
 				
 				System.out.print(" Please enter the third value: ");
 				Integer third = scan.nextInt();
-				obj.findMax(first, second, third);
+				obj = new Maximum<Integer>(first, second, third);
+				obj.testMaximum();
 				break;
 			}				
 			case 2:
@@ -39,7 +39,8 @@ public class MaximumTest {
 				
 				System.out.print(" Please enter the third value: ");
 				Float third = scan.nextFloat();
-				obj.findMax(first, second, third);
+				obj = new Maximum<Float>(first, second, third);
+				obj.testMaximum();
 				break;
 			}
 			case 3:
@@ -52,7 +53,8 @@ public class MaximumTest {
 				
 				System.out.print(" Please enter the third value: ");
 				String third = scan.next();
-				obj.findMax(first, second, third);
+				obj = new Maximum<String>(first, second, third);
+				obj.testMaximum();
 				break;
 			}
 			case 4:
